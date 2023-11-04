@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  mysql-dev:
+    image: mysql:8.0.17
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: car-sales
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
