@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 public class LogAspect {
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
-    @Around("execution(* your.package.name.*.*(..))")
+    @Around("execution(* com.car.caresalesgarage.controllers.*.*(..))")
     public Object logMethodExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();
 
